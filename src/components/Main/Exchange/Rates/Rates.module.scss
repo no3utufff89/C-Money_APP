@@ -1,0 +1,17 @@
+@import './src/style/_colors';
+@import './src/style/_mixin';
+.rates {
+  background: $header;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  overflow: hidden;
+  padding: 15px 60px 25px 20px;
+  &__title {
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+  }
+}

@@ -1,0 +1,40 @@
+@import './src/style/_colors';
+@import './src/style/_mixin';
+
+.card {
+  background: $header;
+  border: 2px solid $pink;
+  border-radius: 10px;
+  display: flex;
+  flex-basis: 380px;
+  flex-direction: column;
+  padding: 15px 20px;
+  &__id {
+    color: $text;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  &__balance {
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 20px;
+    &:after {
+      content: " \20BD";
+    }
+  }
+  &__info {
+    color: $text;
+    display: flex;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: space-between;
+    line-height: 20px;
+    width: 100%;
+  }
+}

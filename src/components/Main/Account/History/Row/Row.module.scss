@@ -1,0 +1,17 @@
+@import './src/style/_colors';
+@import './src/style/_mixin';
+
+.td {
+  padding: 12px 0;
+  &_middle {
+    border-left: 1px solid $bgColor;
+    border-right: 1px solid $bgColor;
+    padding-left: 20px;
+  }
+  &_date {
+    padding-left: 12px;
+  }
+}
+.outcomming {
+  color: $minus;
+}

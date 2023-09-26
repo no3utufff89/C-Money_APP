@@ -1,0 +1,132 @@
+@import '~normalize.css';
+@import '_fonts';
+@import '_colors';
+@import '_mixin';
+
+html {
+    position: relative;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: $text;
+    background-color: $bgColor;
+    font-family: Nunito,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: initial;
+    min-height: 100vh;
+    min-width: 320px;
+    padding-bottom: 200px;
+    @include tablet {
+        padding-bottom: 70px;
+        min-height: auto;
+    }
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+.btn {
+    border: none;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 30px;
+    display: flex;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: linear-gradient($linearGradient);
+    color: $text;
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background 0.3s;
+    @include tablet {
+        width: 100%;
+    }
+    &:disabled {
+        pointer-events: none;
+        background: $disabled;
+        color: $white;
+    }
+    &:hover:before {
+        opacity: 1;
+    }
+    &:focus::after {
+        opacity: 1;
+    }
+    &:active:before,&:active:after {
+        opacity: 0;
+    }
+    &:before,&:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    &:before {
+        background: linear-gradient($hoverGradient);
+    }
+    &:after {
+        background: linear-gradient($hoverGradient);
+    }
+}
+

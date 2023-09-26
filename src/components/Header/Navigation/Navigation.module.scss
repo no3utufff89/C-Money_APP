@@ -1,0 +1,33 @@
+@import 'src/style/colors';
+@import 'src/style/mixin';
+.navigation {
+  gap: 30px;
+}
+
+.exit,
+.navigation {
+  display: flex;
+  font-family: Nunito;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.exit {
+  align-items: center;
+  background-color: initial;
+  border: none;
+  color: #fff;
+  gap: 5px;
+}
+
+.navigation a,
+.navigation button {
+  color: $white;
+  transition: color .3s;
+}
+
+.navigation a:hover,
+.navigation button:hover {
+  color: var(--text);
+}

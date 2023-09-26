@@ -1,0 +1,22 @@
+@import 'src/style/colors';
+@import 'src/style/mixin';
+
+
+.header {
+  background-color: $header;
+  padding: 20px 0;
+  @include tablet {
+    padding: 10px 0;
+  }
+  
+  
+  &_container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 10px 30px;
+    }
+  }
+}

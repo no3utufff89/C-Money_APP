@@ -1,0 +1,13 @@
+@import './src/style/_colors';
+@import './src/style/_mixin';
+
+.table {
+  &__title {
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,19 @@
+@import './src/style/_colors';
+@import './src/style/_mixin';
+
+.td_code {
+  color: $text;
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 45px;
+  
+}
+.td_amount {
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $white;
+}

@@ -1,0 +1,46 @@
+@import './src/style/_colors';
+@import './src/style/_mixin';
+
+.dynamic {
+  background: $header;
+  border-radius: 10px;
+  margin-top: 50px;
+  max-height: 330px;
+  padding: 20px;
+  width: 580px;
+  @include tablet {
+    width: 100%;
+  }
+  &__header {
+    align-items: center;
+    display: flex;
+  }
+  &__title {
+    font-family: Nunito, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-right: 20px;
+  }
+  &__year {
+    color: $text;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+.select {
+  background-color: initial;
+  border: none;
+  color: $text;
+  margin-left: auto;
+  outline: transparent;
+}
+.year {
+  color: $text;
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}

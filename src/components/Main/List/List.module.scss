@@ -1,0 +1,90 @@
+@import './src/style/_colors';
+@import './src/style/_mixin';
+
+.list_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 80px;
+  
+  &__title {
+    font-family: Comfortaa, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    @include tablet {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  &__button {
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 70px;
+    padding: 12px 30px;
+    color: $text;
+    border-radius: 10px;
+    background: linear-gradient($linearGradient);
+  }
+}
+
+.currencies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  
+  
+  &__title {
+    font-family: Comfortaa, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 20px;
+    
+  }
+  
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+.sort {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  align-self: self-start;
+  @include tablet {
+    margin-bottom: 15px;
+  }
+  
+  &__title {
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $text;
+  }
+  
+  &__select {
+    background-color: initial;
+    border: none;
+    color: #fff;
+    outline: transparent;
+    width: 70px;
+    @include tablet {
+      width: auto;
+    }
+  }
+}
+
+option {
+  background-color: $bgColor;
+}
+

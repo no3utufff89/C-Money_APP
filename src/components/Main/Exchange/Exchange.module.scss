@@ -1,0 +1,41 @@
+@import './src/style/_colors';
+@import './src/style/_mixin';
+
+.exchange {
+  padding-top: 60px;
+  &__title {
+    font-family: Comfortaa, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 40px;
+  }
+  &__text {
+    color: $text;
+    display: inline-block;
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 30px;
+    width: 70px;
+    &:first-of-type {
+      margin-bottom: 15px;
+    }
+    &_white {
+      font-family: Nunito, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 20px;
+      color: $white;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

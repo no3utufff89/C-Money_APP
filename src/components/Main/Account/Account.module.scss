@@ -1,0 +1,32 @@
+@import './src/style/_colors';
+@import './src/style/_mixin';
+
+.account {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 65px;
+  }
+  &__header {
+      align-items: center;
+      display: flex;
+      flex-basis: 100%;
+      justify-content: space-between;
+      margin-bottom: 80px;
+    @include tablet {
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+      gap: 15px;
+    }
+  }
+  &__title {
+    font-family: Comfortaa, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 29px;
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+}
