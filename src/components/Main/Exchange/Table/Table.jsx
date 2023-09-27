@@ -12,7 +12,6 @@ export const Table = () => {
   // eslint-disable-next-line max-len
   const userCurrencies = useSelector(state => state.userCurrencies.userCurrencies);
   const loading = useSelector(state => state.userCurrencies.loading);
-
   useEffect(() => {
     if (token) dispatch(getUserCurrencies());
   }, [token]);

@@ -17,7 +17,7 @@ export const History = ({ transactions }) => (
         </thead>
         <tbody className={style.table__tbody}>
           {
-            transactions.map((transaction) => (
+            [...transactions].reverse().map((transaction) => (
               <Row key={generateRandomId()} transaction={transaction}/>
             ))
           }
